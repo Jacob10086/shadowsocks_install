@@ -319,7 +319,7 @@ download_files(){
         exit 1
     fi
     # Download ShadowsocksR file
-    if ! wget --no-check-certificate -O ShadowsocksR.zip https://github.com/TreeFrog123/shadowsocks_install/master/ShadowsocksR.zip; then
+    if ! wget --no-check-certificate -O ShadowsocksR.zip https://raw.githubusercontent.com/TreeFrog123/shadowsocks_install/master/ShadowsocksR.zip; then
         echo -e "[${red}Error${plain}] Failed to download ShadowsocksR file!"
         exit 1
     fi
