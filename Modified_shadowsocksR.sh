@@ -411,7 +411,7 @@ install(){
     # Install ShadowsocksR
     cd ${cur_dir}
     unzip -q ShadowsocksR.zip
-    mv ShadowsocksR/shadowsocks /usr/local/
+    mv shadowsocks /usr/local/
     if [ -f /usr/local/shadowsocks/server.py ]; then
         chmod +x /etc/init.d/shadowsocks
         if check_sys packageManager yum; then
@@ -445,7 +445,7 @@ install(){
 # Install cleanup
 install_cleanup(){
     cd ${cur_dir}
-    rm -rf ShadowsocksR.zip ShadowsocksR ${libsodium_file}.tar.gz ${libsodium_file}
+    rm -rf ShadowsocksR.zip shadowsocks ${libsodium_file}.tar.gz ${libsodium_file}
 }
 
 
